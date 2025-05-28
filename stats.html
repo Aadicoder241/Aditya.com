@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lionel Messi - Stats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px 0;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    .stats-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, background 0.3s ease;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .stat-card h2 {
+      font-size: 2rem;
+      color: #ffd700;
+    }
+
+    .stat-card p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lionel Messi</h1>
+    <p>The GOAT - Career Statistics</p>
+  </header>
+
+  <div class="stats-container">
+    <div class="stat-card">
+      <h2>820</h2>
+      <p>Career Goals</p>
+    </div>
+    <div class="stat-card">
+      <h2>1030</h2>
+      <p>Appearances</p>
+    </div>
+    <div class="stat-card">
+      <h2>350</h2>
+      <p>Assists</p>
+    </div>
+    <div class="stat-card">
+      <h2>44</h2>
+      <p>Titles Won</p>
+    </div>
+    <div class="stat-card">
+      <h2>7</h2>
+      <p>Ballon d'Or</p>
+    </div>
+    <div class="stat-card">
+      <h2>10</h2>
+      <p>La Liga Titles</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Lionel Messi Fan Page | Designed with ❤️ by Aditya khare
+  </footer>
+
+</body>
+</html>
